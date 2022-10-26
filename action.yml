@@ -1,6 +1,7 @@
 # action.yml
 name: 'Sopa Letras'
 description: 'Juego sopa de letras'
+icon: 'battery'
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
