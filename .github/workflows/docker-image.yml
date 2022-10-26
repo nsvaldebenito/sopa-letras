@@ -1,18 +1,22 @@
-name: Docker Image CI
-
+name: Continuous Integration
 on:
   push:
-    branches: [ "master" ]
+    branches: [ master ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ master ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: Checkout
+      uses: actions/checkout@v2.3.0
+
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v1.1.0
+      with:
+        username: nsvaldebenito
+        password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
+        repository: nsvaldebenito/sopa-letras
+        tags: latest
