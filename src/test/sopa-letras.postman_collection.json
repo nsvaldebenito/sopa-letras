@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "55bfe096-cd8a-41b1-9ec4-ef7acf59bd97",
+		"name": "sopa-letras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8949527"
+	},
+	"item": [
+		{
+			"name": "put alphabetSoup",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sr\": 6,\n    \"sc\": 2,\n    \"er\": 6,\n    \"ec\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/alphabetSoup/da7508b8-2b34-4d1c-84a6-32abc4835066",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alphabetSoup",
+						"da7508b8-2b34-4d1c-84a6-32abc4835066"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get alphabetSoup/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alphabetSoup/list/da7508b8-2b34-4d1c-84a6-32abc4835066",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alphabetSoup",
+						"list",
+						"da7508b8-2b34-4d1c-84a6-32abc4835066"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get alphabetSoup/view",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alphabetSoup/view/da7508b8-2b34-4d1c-84a6-32abc4835066",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alphabetSoup",
+						"view",
+						"da7508b8-2b34-4d1c-84a6-32abc4835066"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post alphabetSoup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"w\":15,\n\"h\":15,\n\"ltr\":true,\n\"rtl\":false,\n\"ttb\":true,\n\"btt\":false,\n\"d\":false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/alphabetSoup/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alphabetSoup",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
