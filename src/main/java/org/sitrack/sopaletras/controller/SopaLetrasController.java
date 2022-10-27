@@ -34,6 +34,13 @@ public class SopaLetrasController {
 
 	@Autowired
 	SopaLetrasService sopaLetrasService;
+	
+	
+
+	public SopaLetrasController() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	@PostMapping(path = "/", produces = { MediaType.APPLICATION_JSON_VALUE }, consumes = {
 			MediaType.APPLICATION_JSON_VALUE })

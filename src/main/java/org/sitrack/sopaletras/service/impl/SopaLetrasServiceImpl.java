@@ -26,6 +26,13 @@ public class SopaLetrasServiceImpl implements SopaLetrasService {
 
 	@Autowired
 	SoupRepository soupRepository;
+	
+	
+
+	public SopaLetrasServiceImpl() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public SoupEntity addSoup(RequestSoup requestSoup) throws Exception {
 		
