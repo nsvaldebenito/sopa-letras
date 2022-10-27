@@ -29,7 +29,11 @@ public class Utils {
 
     public static ResponseWrapper formatResponse(int statusCode, String message, Object payload) {
 
-        return ResponseWrapper.builder().statusCode(statusCode).message(message).payload(payload).build();
+    	ResponseWrapper responseWrapper = new ResponseWrapper();
+    	responseWrapper.setStatusCode(statusCode);
+    	responseWrapper.setMessage(message);
+    	responseWrapper.setPayload(payload);
+        return responseWrapper;
     }
 
     public static Pageable getPageable(String sortName, Long page, Long size, Boolean isAscending) {

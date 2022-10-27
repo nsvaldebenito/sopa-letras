@@ -2,21 +2,6 @@ package org.sitrack.sopaletras.dto;
 
 import java.io.Serializable;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
-
-
-@Getter
-@Setter
-@ToString
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class ResponseWrapper implements Serializable {
 	/**
 	 * 
@@ -29,6 +14,37 @@ public class ResponseWrapper implements Serializable {
 
 	private Object payload;
 
-	
-	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public int getStatusCode() {
+		return statusCode;
+	}
+
+	public void setStatusCode(int statusCode) {
+		this.statusCode = statusCode;
+	}
+
+	public Object getPayload() {
+		return payload;
+	}
+
+	public void setPayload(Object payload) {
+		this.payload = payload;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	@Override
+	public String toString() {
+		return "ResponseWrapper [message=" + message + ", statusCode=" + statusCode + ", payload=" + payload + "]";
+	}
+
 }

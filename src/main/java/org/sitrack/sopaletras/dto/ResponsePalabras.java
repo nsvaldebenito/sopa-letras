@@ -1,22 +1,28 @@
 package org.sitrack.sopaletras.dto;
 
+import java.io.Serializable;
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+public class ResponsePalabras implements Serializable {
 
-@Getter
-@Setter
-@ToString
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class ResponsePalabras {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7521121779943979575L;
 	
 	private List<String> palabras;
+
+	public List<String> getPalabras() {
+		return palabras;
+	}
+
+	public void setPalabras(List<String> palabras) {
+		this.palabras = palabras;
+	}
+
+	@Override
+	public String toString() {
+		return "ResponsePalabras [palabras=" + palabras + "]";
+	}
 
 }

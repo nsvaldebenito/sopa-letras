@@ -2,20 +2,23 @@ package org.sitrack.sopaletras.dto;
 
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class Rows {
 	private List<Letra> letras;
+
+	public List<Letra> getLetras() {
+		return letras;
+	}
+
+	public void setLetras(List<Letra> letras) {
+		this.letras = letras;
+	}
+
+	@Override
+	public String toString() {
+		return "Rows [letras=" + letras + "]";
+	}
+	
+	
 
 }
