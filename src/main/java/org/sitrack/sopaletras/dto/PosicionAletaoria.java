@@ -10,6 +10,13 @@ public class PosicionAletaoria {
 	private String direccion;
 	private int length;
 	private int estado;
+	
+	
+
+	public PosicionAletaoria() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public int getSr() {
 		return sr;

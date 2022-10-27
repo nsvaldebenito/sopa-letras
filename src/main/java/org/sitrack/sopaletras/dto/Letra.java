@@ -4,6 +4,13 @@ public class Letra {
 	private String letra;
 	private int estado;
 	private int encontrada;
+	
+	
+
+	public Letra() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getLetra() {
 		return letra;

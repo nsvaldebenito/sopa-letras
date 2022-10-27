@@ -13,6 +13,14 @@ public class Rows {
 	public void setLetras(List<Letra> letras) {
 		this.letras = letras;
 	}
+	
+	
+	
+
+	public Rows() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public String toString() {

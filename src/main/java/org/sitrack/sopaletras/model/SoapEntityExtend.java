@@ -7,6 +7,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class SoapEntityExtend extends SoupEntity {
 
 	private Soup soup;
+	
+	
+
+	public SoapEntityExtend() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public Soup getSoup() {
 		return soup;

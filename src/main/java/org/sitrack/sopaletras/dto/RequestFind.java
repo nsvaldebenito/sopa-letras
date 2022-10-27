@@ -22,6 +22,13 @@ public class RequestFind implements Serializable {
 
 	@NotNull
 	private int ec;
+	
+	
+
+	public RequestFind() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public int getSr() {
 		return sr;

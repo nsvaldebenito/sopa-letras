@@ -13,6 +13,13 @@ public class ResponseWrapper implements Serializable {
 	private int statusCode;
 
 	private Object payload;
+	
+	
+
+	public ResponseWrapper() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getMessage() {
 		return message;

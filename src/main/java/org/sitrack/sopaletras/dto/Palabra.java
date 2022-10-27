@@ -10,6 +10,11 @@ public class Palabra {
 	private int direccion;
 	
 	
+	
+	public Palabra() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public String getPalabra() {
 		return palabra;
 	}

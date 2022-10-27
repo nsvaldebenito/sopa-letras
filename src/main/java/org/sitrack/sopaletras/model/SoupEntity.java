@@ -7,9 +7,16 @@ import org.springframework.data.annotation.Id;
 public abstract class SoupEntity {
 	
 	@Id   
-    protected UUID id;    
+    protected UUID id;   
+	
+	
 
-    public UUID getId() {
+    public SoupEntity() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public UUID getId() {
         return id;
     }
     

@@ -11,6 +11,13 @@ public class ResponsePalabras implements Serializable {
 	private static final long serialVersionUID = 7521121779943979575L;
 	
 	private List<String> palabras;
+	
+	
+
+	public ResponsePalabras() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public List<String> getPalabras() {
 		return palabras;

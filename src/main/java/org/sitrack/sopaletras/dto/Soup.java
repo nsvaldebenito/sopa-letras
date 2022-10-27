@@ -5,6 +5,14 @@ import java.util.List;
 public class Soup {
 	private List<Rows> rows;
 	private List<PosicionAletaoria> palabras;
+	
+	
+	
+	
+	public Soup() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public List<Rows> getRows() {
 		return rows;
 	}
